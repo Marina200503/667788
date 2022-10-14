@@ -1,0 +1,128 @@
+ЗАДАНИЕ 111:
+
+a = (8**148 - 4**123 +2**654 - 17)
+c = str(bin(a))
+print(c.count('1'))
+
+
+ЗАДАНИЕ 112:
+a = ((2**4400 - 1)*(4**2200 + 2))
+c = str(bin(a))
+print(c.count('1'))
+
+ЗАДАНИЕ 114:
+a = (4**590 + 8**350 - 2**1020 - 25)
+c = str(bin(a))
+print(c.count('0'))
+
+ЗАДАНИЕ 115:
+
+a = (4**230 + 8**120 - 2**150 - 100)
+c = str(bin(a))
+print(c.count('0'))
+
+
+ЗАДАНИЕ 116:
+
+a = (4**1024 + 8**1025 -2**1026 - 140)
+c = str(bin(a))
+print(c.count('0'))
+
+ЗАДАНИЕ 139:
+
+a = 2**1024 + 2**1025
+a = hex(a)
+print(a)
+
+
+ЗАДАНИЕ 149:
+
+a = 3 * 16**8 - 4**5 + 3
+a = perevod(a, 4)
+a = str(a)
+print(a.count('3'))
+
+ЗАДАНИЕ 151:
+
+a = 5 * 36**7 + 6**10 -36
+a = perevod(a, 6)
+a = str(a)
+print(a.count('5'))
+
+ЗАДАНИЕ 155:
+
+a = 9**8 + 3**5 - 2
+a = perevod(a, 3)
+a = str(a)
+print(a.count('2'))
+
+
+ЗАДАНИЕ 161:
+
+a = 9**20+ 3**60 - 25
+a = perevod(a, 3)
+a = str(a)
+print(a.count('2'))
+
+ЗАДАНИЕ 169:
+
+a = 9**7 - 3**10 + 3**21 - 9
+a = perevod(a, 3)
+a = str(a)
+print(a.count('2'))
+
+ЗАДАНИЕ 175:
+
+a = 9**8 + 3**25 - 14
+a = perevod(a, 3)
+a = str(a)
+sm = ''
+for i in range(len(a)):
+    sm += a[i]
+sm = int(sm)
+sm = perevod(sm, 10)
+print(sm)
+
+
+ЗАДАНИЕ 205:
+
+a = 64**30 + 2**300 - 32
+a = perevod(a, 4)
+a = str(a)
+print(a.count('3'))
+
+ЗАДАНИЕ 206:
+
+a = 64**150 + 4**300 - 32
+a =  perevod(a, 8)
+a = str(a)
+print(a.count('7'))
+
+ЗАДАНИЕ 207:
+
+
+a = 32**60 + 4**180 - 128
+a = perevod(a, 8)
+a = str(a)
+print(a.count('7'))
+
+ЗАДАНИЕ218:
+
+for i in range(2, 37):
+    a = perevod(12, i)
+    b = perevod(31, i)
+    d = perevod(402, i)
+    c = a*b    
+    if c == d:
+       print(i)
+
+ЗАДАНИЕ 227:
+
+a = ((44 + 4**50)* 4**25 + 44) * 4**12 + 44
+a = perevod(a, 4)
+a = str(a)
+a1 = a.count('0')
+a2 = a.count('1')
+a3 = a.count('2')
+a4 = a.count('3')
+print(a1 + a2 + a3 + a4)
